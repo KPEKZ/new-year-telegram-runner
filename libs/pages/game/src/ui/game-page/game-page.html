@@ -1,0 +1,5 @@
+<div class="game-container">
+  <canvas #canvas></canvas>
+  <lib-game-hud class="game-hud" [gameState]="gameState()"></lib-game-hud>
+  <lib-game-controls (controlsClickEvent)="handleHudControlButtons($event)"></lib-game-controls>
+</div>

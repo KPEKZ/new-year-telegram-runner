@@ -1,0 +1,36 @@
+:host {
+  display: block;
+
+  .content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+
+    .stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      > span {
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+
+      > img {
+        width: 30%;
+      }
+    }
+
+    .actions {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 2rem;
+    }
+  }
+}

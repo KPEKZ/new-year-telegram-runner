@@ -1,0 +1,31 @@
+<div class="game-controls-container">
+  <button
+      type="button"
+      size="l"
+      tuiButton
+      (pointerdown)="buttonDown('left')"
+      (pointerup)="buttonUp('left')"
+  >
+    <tui-icon icon="@tui.arrow-big-left"></tui-icon>
+  </button>
+  <button
+    type="button"
+    size="l"
+    tuiButton
+    (pointerdown)="buttonDown('top')"
+    (pointerup)="buttonUp('top')"
+  >
+    <tui-icon icon="@tui.arrow-big-up"></tui-icon>
+  </button>
+  <button
+    type="button"
+    size="l"
+    tuiButton
+    (pointerdown)="buttonDown('right')"
+    (pointerup)="buttonUp('right')"
+  >
+    <tui-icon icon="@tui.arrow-big-right"></tui-icon>
+  </button>
+</div>
+
+<!-- button[type=button][size=s][tuiButton]*3>tui-icon[icon]  -->

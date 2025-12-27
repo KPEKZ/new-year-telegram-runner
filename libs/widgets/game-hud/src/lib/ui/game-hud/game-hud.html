@@ -1,0 +1,8 @@
+<div class="hud">
+  <div class="lives">
+    @for(live of lives(); track $index) {
+      <img class="live" src="images/candy.png" alt="">
+    }
+  </div>
+  <span class="score">score: {{ score() }}</span>
+</div>

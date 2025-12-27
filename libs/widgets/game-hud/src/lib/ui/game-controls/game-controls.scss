@@ -1,0 +1,17 @@
+:host {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+
+  .game-controls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    > button {
+      opacity: 0.5;
+    }
+  }
+}

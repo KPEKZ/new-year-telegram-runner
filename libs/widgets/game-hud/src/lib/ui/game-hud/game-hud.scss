@@ -1,0 +1,34 @@
+:host {
+  display: flex;
+
+  .hud {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    .lives {
+      display: flex;
+      align-items: center;
+      gap: clamp(8px, 2vw, 20px);
+
+      .live {
+        width: clamp(40px, 8vw, 80px); // Фиксированный, но responsive размер (min 40px, max 80px)
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    .score {
+      font-size: clamp(1.2rem, 4vw, 2.5rem); // Адаптивный текст (масштабируется с экраном)
+      white-space: nowrap;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 1rem 1rem;
+      border-radius: 10px;
+      color: #FFF;
+    }
+  }
+}

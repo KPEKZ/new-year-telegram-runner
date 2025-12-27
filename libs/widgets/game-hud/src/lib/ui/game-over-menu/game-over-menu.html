@@ -1,0 +1,11 @@
+<div class="content">
+  <div class="stats">
+    <img src="images/santa-claus.png" alt="">
+    <span>You earned {{score}} points !</span>
+  </div>
+  <div class="actions">
+    <button type="button" tuiButton (pointerdown)="selectMenuButton('restart')">Restart</button>
+    <button type="button" tuiButton (pointerdown)="selectMenuButton('menu')">Main menu</button>
+    <button type="button" tuiButton (pointerdown)="selectMenuButton('exit')">Exit</button>
+  </div>
+</div>
